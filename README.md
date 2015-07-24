@@ -3,11 +3,16 @@ findHandlersJS
 
 Stop wasting your time looking for where those handlers are registered, use findHandlersJS and discover them instantly.
 
-Usage: findEventHandlers(eventType, jQuerySelector)
+Usage: 
+```javascript
+findEventHandlers(eventType, jQuerySelector)
+```
 
 Imagine you want to find all the "click" event handlers for all the buttons that are immediate children of the div with id="myDiv":
 
+```javascript
 findEventHandlers("click", "div#myDiv > :button")
+```
 
 It will return an array with the element names, the jQuery $._data event information and the list of elements that that event handler covers (targets).
 
