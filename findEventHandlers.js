@@ -109,6 +109,7 @@ module.exports = (function(_, $){
 	};
 
 
+//*** TODO DRY THIS SECTION UP USING AN ITERATOR OVER A FUNCTION PARAMETER OBJECT ***//
 	//Returns true or false based on content of object
 	isEventHandlersEmpty = function(eventType, jqSelector){
 	  	return (!(_.isEmpty(findEventHandlers(eventType, jqSelector))));
@@ -176,6 +177,7 @@ module.exports = (function(_, $){
 
 		return isHandler;
 	};
+//***********************************************************************************//
 
 
 	/** @export */
