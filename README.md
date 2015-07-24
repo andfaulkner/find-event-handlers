@@ -12,6 +12,8 @@ findEventHandlers("click", "div#myDiv > :button")
 It will return an array with the element names, the jQuery $._data event information and the list of elements that that event handler covers (targets).
 
 For example, if div#myDiv has a delegate handler with the selector :button and there is a button with id="save" inside the div, you would get this result:
+
+```javascript
 [{
 	element: div#myDiv,
 	events: [{
@@ -23,6 +25,7 @@ For example, if div#myDiv has a delegate handler with the selector :button and t
 		targets: [button#save]			
 	}]
 }] 
+```
 
 If you are using the console on Chrome, you can right click the handler, click show function definition and add breakpoints to debug the handlers.
 
